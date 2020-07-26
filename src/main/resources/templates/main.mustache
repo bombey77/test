@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+<form action="/" method="get">
+    <div>
+        <button type="submit">Get Token</button>
+    </div>
+</form>
+<div>Current token is {{token}}</div>
+
+<form action="/images" method="post">
+    <div>
+        <button type="submit">Get images</button>
+    </div>
+</form>
+<div>
+    {{#image}}
+        {{image}}
+    {{/image}}
+</div>
+
+<form action="/images" method="get">
+    <div>
+        <input type="text" name="page" placeholder="Input Page">
+        <button type="submit">Get Page</button>
+    </div>
+</form>
+<div>
+    {{#page}}
+        {{page}}
+    {{/page}}
+</div>
+
+<div>
+    {{#details}}
+        {{details}}
+    {{/details}}
+</div>
+
+
+</body>
